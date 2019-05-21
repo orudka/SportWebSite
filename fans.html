@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ironman Triathlon</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/fans.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Main</a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="#">Triathlons</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item"><a class="dropdown-item" href="matches.html">Calendar of triathlons</a></li>
+                <li class="nav-item"><a class="dropdown-item" href="#">Next Triathlon</a></li>
+                <li class="nav-item"><a class="dropdown-item" href="#">Records</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item active"><a class="nav-link" href="fans.html">Fans</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="index.html"><img src="src/Ironman_logo.png"></a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Fans say!</h1>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-body">
+        <p>How much does it cost to enter Ironman?</p>
+        <div class="mini-row d-flex align-items-center">
+          <h5 class="card-subtitle col">10.10.2018, 20:33</h5>
+          <h4 class="card-title text-right col">Sebastian Kienle</h4>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-body">
+        <p>Who won Ironman 2018?</p>
+        <div class="mini-row d-flex align-items-center">
+          <h5 class="card-subtitle col">23.12.2018, 00:47</h5>
+          <h4 class="card-title text-right col"> Patrick Lange</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p>How do you train for an Ironman?</p>
+        <div class="mini-row d-flex align-items-center">
+          <h5 class="card-subtitle col">17.03.2019, 08:50</h5>
+          <h4 class="card-title text-right col">Jan Frodeno</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p>How much is a half Ironman?</p>
+        <div class="mini-row d-flex align-items-center">
+          <h5 class="card-subtitle col">01.07.2019, 20:33</h5>
+          <h4 class="card-title text-right col">Daniela Ryf</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="comment-field"></div>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="comment-name" placeholder="Your name"
+              aria-label="Recipient's username" aria-describedby="button-addon2">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Leave a comment</label>
+          <textarea class="form-control" id="comment-body" placeholder="Ask a question" rows="6"></textarea>
+        </div>
+        <div class="form-group text-right">
+          <button type="button" class="btn btn-outline-dark btn-lg" id="comment-add">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="src/logo/tree_logos_small.png">
+          <hr class="light">
+          <p>555-555-5555</p>
+          <p>rudka.oksana@gmail.com</p>
+          <p>100 Stret Name</p>
+          <p>City, Country, 00000</p>
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h5>Hours</h5>
+          <hr class="light">
+          <p>Monday: 9am - 5pm</p>
+          <p>Saturday: 10am - 4pm</p>
+          <p>Sunday: cloused</p>
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h5>Hours</h5>
+          <hr class="light">
+          <p>City, State, 00000</p>
+          <p>City, State, 00000</p>
+          <p>City, State, 00000</p>
+          <p>City, State, 00000</p>
+        </div>
+        <div class="col-12">
+          <hr class="light">
+          <h5>Find us on Social Media</h5>
+          <div class="col-12 social padding">
+            <a href="https://www.facebook.com/IRONMANEurope/"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/ironmantri"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/user/IMEurope"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="js/fans.js" type="text/javascript"></script>
+</body>
+
+</html>

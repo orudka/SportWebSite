@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.carousel-inner img{
+  margin-top: 3.7em;
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.welcome {
+  margin: 0 auto;
+}
+
+.social a {
+  font-size: 4.5em;
+  padding: 3rem 3rem 0 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-youtube:hover {
+  color: #d5d5d5;
+  transition: all .3s ease-in-out;
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+}
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+footer:a {
+  color: #d5d5d5;
+}
+
+hr.ligth-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+/*--- Media Queries --*/
+@media (max-width: 992px) {
+  .social a{
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a{
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-indecators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a{
+    font-size: 2em;
+    padding: .7rem;
+  }
+}
+
+/*--- Fixed Background Image --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;  
+}
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url('im_swim.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- Bootstrap Padding Fix --*/
+/* [class*="col-"] {
+  padding: 1rem;
+} */
+
+nav ul li a {
+    text-transform: uppercase !important;
+    padding: 20px !important;
+}
+
+nav ul li a:hover {
+    background: red !important;
+    color: white !important;
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+nav ul li ul {
+    display: block !important;
+    background: rgba(255, 255, 255, .2) !important;
+    min-width: 250px !important;
+    position: absolute !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: .5s !important;
+    transform: translateY(40px) !important;
+}
+
+nav ul li:hover ul {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0px) !important;
+}
+
+.navbar {
+  padding: 0 0 0 16px !important;
+}
+
+.container {
+  margin-top: 5rem; 
+}
+
+.sm {
+  margin-top: 0 !important;
+}

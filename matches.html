@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=divice-width, initial-scale=1">
+  <title>Ironman Triathlon</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Main</a></li>
+            <li class="nav-item active dropdown"><a class="nav-link" href="matches.html">Triathlons</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Calendar of triathlons</a>
+                <a class="dropdown-item" href="#">Next Triathlon</a>
+                <a class="dropdown-item" href="#">Records</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="fans.html">Fans</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="index.html"><img src="src/Ironman_logo.png"></a>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="container">
+    <div id="records">
+      <h2>Ironman world records</h2>
+      <h3>Man</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Record</th>
+            <th>Athlete</th>
+            <th>Nationality</th>
+            <th>Competition</th>
+            <th>Place</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Full Ironman</td>
+            <td>7:35:39<br>(45:22-1:36-4:08:07-1:18-2:39:18)</td>
+            <td>Jan Frodeno</td>
+            <td>Germany</td>
+            <td>Challenge Roth 2016</td>
+            <td>Roth, Germany</td>
+          </tr>
+          <tr>
+            <td>Swim (3.862 km)</td>
+            <td>41:26</td>
+            <td>Christof Wandratsch</td>
+            <td>Germany</td>
+            <td>Ironman Austria 2006</td>
+            <td>Klagenfurt, Austria</td>
+          </tr>
+          <tr>
+            <td>Swim (3.862 km; current-aided)</td>
+            <td>39:08</td>
+            <td>Luke Bell</td>
+            <td>Australia</td>
+            <td>Ironman New York 2012</td>
+            <td>New York, United States</td>
+          </tr>
+          <tr>
+            <td>Bike (180.246 km)</td>
+            <td>4:01:14</td>
+            <td>Andrew Starykowicz</td>
+            <td>United States</td>
+            <td>Ironman Texas 2017</td>
+            <td>The Woodlands, Texas, United States</td>
+          </tr>
+          <tr>
+            <td>Run (42.195 km)</td>
+            <td>2:34:39</td>
+            <td>Matt Hanson</td>
+            <td>United States</td>
+            <td>Ironman Texas 2018</td>
+            <td>The Woodlands, Texas, United States</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Woman</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Record</th>
+            <th>Athlete</th>
+            <th>Nationality</th>
+            <th>Competition</th>
+            <th>Place</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Full Ironman</td>
+            <td>8:18:13<br>(49:49-1:56-4:40:39-1:17-2:44:35)</td>
+            <td>Chrissie Wellington</td>
+            <td>United Kingdom</td>
+            <td>Challenge Roth 2011</td>
+            <td>Roth, Germany</td>
+          </tr>
+          <tr>
+            <td>Swim (3.862 km)</td>
+            <td>45:04</td>
+            <td>Amanda Stevens</td>
+            <td>United Kingdom</td>
+            <td>Ironman Germany 2012</td>
+            <td>Frankfurt, Germany</td>
+          </tr>
+          <tr>
+            <td>Swim (3.862 km; current-aided)</td>
+            <td>40:29</td>
+            <td>Dede Griesbauer</td>
+            <td>United States</td>
+            <td>Ironman New York 2012</td>
+            <td>New York, United States</td>
+          </tr>
+          <tr>
+            <td>Bike (180.246 km)</td>
+            <td>4:26:07</td>
+            <td>Daniela Ryf</td>
+            <td>Switzerland</td>
+            <td>2018 Ironman World Championship</td>
+            <td>Hawaii, United States</td>
+          </tr>
+          <tr>
+            <td>Run (42.195 km)</td>
+            <td>2:44:35</td>
+            <td>Chrissie Wellington</td>
+            <td>United Kingdom</td>
+            <td>Challenge Roth 2011</td>
+            <td>Roth, Germany</td>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="src/logo/tree_logos_small.png">
+            <hr class="light">
+            <p>555-555-5555</p>
+            <p>rudka.oksana@gmail.com</p>
+            <p>100 Stret Name</p>
+            <p>City, Country, 00000</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Hours</h5>
+            <hr class="light">
+            <p>Monday: 9am - 5pm</p>
+            <p>Saturday: 10am - 4pm</p>
+            <p>Sunday: cloused</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Hours</h5>
+            <hr class="light">
+            <p>City, State, 00000</p>
+            <p>City, State, 00000</p>
+            <p>City, State, 00000</p>
+            <p>City, State, 00000</p>
+          </div>
+          <div class="col-12">
+            <hr class="light">
+            <h5>Find us on Social Media</h5>
+            <div class="col-12 social padding">
+              <a href="https://www.facebook.com/IRONMANEurope/"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/ironmantri"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.youtube.com/user/IMEurope"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+    </footer>
+
+
+</body>
+
+</html>
