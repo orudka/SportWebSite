@@ -33,24 +33,28 @@ html, body {
   padding: 3rem 3rem 0 3rem;
 }
 
-.fa-facebook {
+.fa-facebook:hover {
   color: #3b5998;
-}
-
-.fa-twitter {
-  color: #00aced;
-}
-
-.fa-youtube {
-  color: #bb0000;
-}
-
-.fa-facebook:hover,
-.fa-twitter:hover,
-.fa-youtube:hover {
-  color: #d5d5d5;
   transition: all .3s ease-in-out;
   transform: scale(1.1);
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+  transition: all .3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.fa-youtube:hover {
+  color: #bb0000;
+  transition: all .3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-youtube {
+  color: #d5d5d5;
 }
 
 footer {
