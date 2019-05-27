@@ -1,6 +1,7 @@
 let comments = [];
 let commentName = document.getElementById('comment-name');
 let commentBody = document.getElementById('comment-body');
+let button = document.getElementById('comment-add');
 loadComments();
 
 document.getElementById('comment-add').onclick = function () {
@@ -11,9 +12,12 @@ document.getElementById('comment-add').onclick = function () {
     body: commentBody.value,
     time: Math.floor(Date.now() / 1000),
   }
+
   commentName.value = '';
   commentBody.value = '';
+  disabledButton(false);
   comments.push(comment);
+
   saveComments();
   let commentField = document.getElementById('comment-container');
   commentField.innerHTML += showComment(comment);
@@ -58,22 +62,23 @@ function timeConverter(UNIX_timestamp) {
   return time;
 }
 
-// let button = document.querySelector('.btn');
-let button = document.getElementById('comment-add');
+// let button = document.querySelector('.submit-button');
+
 
 function checkInput() {
-  if (commentName.value.trim() !== "" && commentBody.value.trim() !== "") {
-      button.style.backgroundColor = '#fa923f';
-      button.disabled = false;
-  } else {
-      button.style.backgroundColor = '#979695';
-      button.disabled = true;
-  }
+  disabledButton(commentName.value.trim() !== "" && commentBody.value.trim() !== "")
 }
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  console.log('Submitted');
-})
-
-// method trim - to fix space in input forn
+function disabledButton(isDisabled) {
+  if (isDisabled) {
+    button.style.backgroundColor = 'red'
+    button.style.borderColor = 'red';
+    button.style.color = 'white';
+    button.disabled = false;
+  } else {
+    button.style.backgroundColor = 'white'
+    button.style.borderColor = '#343a40';
+    button.style.color = '#343a40';
+    button.disabled = true;
+  }
+}
