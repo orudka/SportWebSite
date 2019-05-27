@@ -142,3 +142,7 @@ section {
   transition: all .2s ease-in-out;
   transform: scale(1.1);
 }
+
+.btn:disabled {
+  opacity: 1;
+}

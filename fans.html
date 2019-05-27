@@ -50,64 +50,64 @@
       </div>
     </div>
 
+    <div id="comment-container">
+      <div class="card">
+        <div class="card-body">
+          <p>How much does it cost to enter Ironman?</p>
+          <div class="mini-row d-flex align-items-center">
+            <h5 class="card-subtitle col">10.10.2018, 20:33</h5>
+            <h4 class="card-title text-right col">Sebastian Kienle</h4>
+          </div>
+        </div>
+      </div>
 
-    <div class="card">
-      <div class="card-body">
-        <p>How much does it cost to enter Ironman?</p>
-        <div class="mini-row d-flex align-items-center">
-          <h5 class="card-subtitle col">10.10.2018, 20:33</h5>
-          <h4 class="card-title text-right col">Sebastian Kienle</h4>
+
+      <div class="card">
+        <div class="card-body">
+          <p>Who won Ironman 2018?</p>
+          <div class="mini-row d-flex align-items-center">
+            <h5 class="card-subtitle col">23.12.2018, 00:47</h5>
+            <h4 class="card-title text-right col"> Patrick Lange</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <p>How do you train for an Ironman?</p>
+          <div class="mini-row d-flex align-items-center">
+            <h5 class="card-subtitle col">17.03.2019, 08:50</h5>
+            <h4 class="card-title text-right col">Jan Frodeno</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <p>How much is a half Ironman?</p>
+          <div class="mini-row d-flex align-items-center">
+            <h5 class="card-subtitle col">01.07.2019, 20:33</h5>
+            <h4 class="card-title text-right col">Daniela Ryf</h4>
+          </div>
         </div>
       </div>
     </div>
-
-
-    <div class="card">
-      <div class="card-body">
-        <p>Who won Ironman 2018?</p>
-        <div class="mini-row d-flex align-items-center">
-          <h5 class="card-subtitle col">23.12.2018, 00:47</h5>
-          <h4 class="card-title text-right col"> Patrick Lange</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <p>How do you train for an Ironman?</p>
-        <div class="mini-row d-flex align-items-center">
-          <h5 class="card-subtitle col">17.03.2019, 08:50</h5>
-          <h4 class="card-title text-right col">Jan Frodeno</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <p>How much is a half Ironman?</p>
-        <div class="mini-row d-flex align-items-center">
-          <h5 class="card-subtitle col">01.07.2019, 20:33</h5>
-          <h4 class="card-title text-right col">Daniela Ryf</h4>
-        </div>
-      </div>
-    </div>
-
+    
     <div class="container">
-      <div id="comment-field"></div>
-      <form>
+      <form class="form">
         <div class="form-group">
           <label for="exampleInputEmail1">Name</label>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" id="comment-name" placeholder="Your name"
+            <input type="text" class="form-control" id="comment-name" oninput="checkInput()" placeholder="Your name"
               aria-label="Recipient's username" aria-describedby="button-addon2">
           </div>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Leave a comment</label>
-          <textarea class="form-control" id="comment-body" placeholder="Ask a question" rows="6"></textarea>
+          <textarea class="form-control" id="comment-body" oninput="checkInput()" placeholder="Ask a question" rows="6"></textarea>
         </div>
         <div class="form-group text-right">
-          <button type="button" class="btn btn-outline-dark btn-lg" id="comment-add">Send</button>
+          <button type="submit" class="btn btn-outline-dark btn-lg" id="comment-add" disabled>Send</button>
         </div>
       </form>
     </div>
